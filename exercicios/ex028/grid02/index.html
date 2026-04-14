@@ -12,12 +12,10 @@
         height: 350px;
 
         display: grid;
-        grid-template-columns: auto auto auto;
-        grid-template-rows: auto auto auto;
-        align-items: normal;
+        grid-template: repeat(3, 100px) / repeat(3, 1fr);
         justify-items: normal;
-        align-content: normal;
-        justify-content: normal;
+        place-items: normal normal;
+        place-content: center normal;
     }
 
     div.item {
