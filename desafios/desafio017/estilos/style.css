@@ -123,7 +123,7 @@ article {
 }
 article h2 {
   color: var(--destaque);
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .video-conteiner {
@@ -139,4 +139,76 @@ article h2 {
   left: 0;
   width: 100%;
   border-radius: 8px;
+}
+
+#skill-conteiner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+#skill-conteiner .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#skill-conteiner .nome {
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#skill-conteiner .porcent {
+  font-weight: bold;
+  color: var(--destaque);
+}
+
+#skill-conteiner .barra {
+  width: 100%;
+  height: 8px;
+  background-color: var(--fundo-principal);
+  border-radius: 4px;
+}
+
+#skill-conteiner .progresso {
+  height: 100%;
+  background-color: var(--destaque-inverso);
+  border-radius: 4px;
+}
+
+#formacao-conteiner {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-conteiner .curso {
+    background-color: var(--fundo-principal);
+    border-radius: 8px;
+    border-left: 5px solid var(--destaque-inverso);
+    padding-left: 15px;
+}
+
+#formacao-conteiner .curso:hover {
+  border-left-width: 15px;
+  transition: border-width 0.5s, border-color 0.5s;
+  border-color: var(--destaque);
+  cursor: pointer;
+}
+
+#formacao-conteiner .periodo {
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-conteiner .instituicao {
+  color: var(--destaque-inverso);
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 768px){
+    #skill-conteiner {
+      grid-template-columns: 1fr 1fr;
+    }
 }
